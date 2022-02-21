@@ -1,0 +1,41 @@
+/** 将 sidebar 分组文案替换为分割线 **/
+#document-sidebar .p-2.uppercase {
+	position: relative;
+	font-size: 0;
+	border-top: 1px solid var(--fade-primary);
+}
+#document-sidebar .p-2.uppercase svg {
+	display: none !important;
+}
+
+/** 增加 menu item 选中态框间距、平衡其内边距 **/
+[data-type=document_list_item] {
+	margin-bottom: 4px;	
+}
+[data-type=document_list_item] .p-2 {
+	padding: 0.4rem;
+}
+/** 增加 folder 内 document 间距 **/
+[data-type=document_list_item] [data-item=document_list] > div {
+	margin-top: 4px;
+}
+
+/** 去掉输入提示 **/
+.rich-text-editor-placeholder {
+	display: none !important;
+}
+
+/** 增加 rem dot 和文本间距，防止鼠标点击行首编辑结果误触 zoom in **/
+.hierarchy-editor--ltr .rem-text {
+    padding-left: 28px !important;
+}
+
+/** 编辑器 rem 子元素撑高 **/
+.tree-node--children .tree-node-container:last-of-type {
+	padding-bottom: 10px;
+}
+
+/** header 缩小 **/
+.rem-header--3:not(.document-title) {
+	font-size: 1.1rem;
+}

@@ -1,0 +1,123 @@
+:root {
+	/** 主色 **/
+	--primary: #7a61ad;
+	--light-primary: #e9ddff;
+	--fade-primary: #f5f0ff;
+
+	/** 副色 **/
+	--second: #f12a80;
+	--light-second: #f74d97;
+    --fade-second: #fcecee;
+}
+
+/** all **/
+body,
+.text-gray-40,
+.text-gray-60,
+.text-gray-100,
+.hover\:text-gray-50:hover,
+.text-primary {
+	color: var(--primary);
+}
+.w-\[36px\] svg {
+	fill: var(--primary) !important;
+}
+.bg-gray-5,
+.bg-blue-5,
+.bg-primary-5,
+.bg-gray-10-transparent,
+.hover\:bg-blue-10:hover,
+.hover\:bg-gray-10:hover,
+.hover\:bg-hover-bg:hover,
+.group:hover .group-hover-bg-hover-bg-transparent:hover {
+	background-color: var(--fade-primary);
+}
+.bg-primary-50 {
+	background-color: var(--second);
+}
+.hover\:bg-primary-70:hover {
+	background-color: var(--light-second);
+}
+
+/** menu **/
+.document-sidebar_top__user-and-collapse svg {
+	fill: var(--primary) !important;
+}
+
+/** breadcrumb **/
+.parent-link {
+	color: var(--primary);
+}
+.parent-link:hover {
+	background-color: var(--fade-primary);
+}
+
+/** bullet **/
+.rem-bullet__ring {
+	fill: transparent;
+}
+.rem-bullet__core {
+	fill: var(--fade-primary);
+}
+.rem-bullet__container:hover .rem-bullet__ring,
+.rem-bullet__container:hover .rem-bullet--hidden-children .rem-bullet__ring,
+.rem-bullet--hidden-children .rem-bullet__ring {
+	fill: var(--light-primary);
+}
+.rem-bullet__container:hover .rem-bullet__core,
+.rem-bullet--hidden-children .rem-bullet__core {
+	fill: var(--primary);
+}
+
+/** content **/
+.rem-header--1,
+.rem-header--2,
+.rem-header--3 {
+	color: var(--primary) !important;
+}
+.quote {
+    background-color: var(--light-primary);
+}
+
+/** card arrow **/
+.delimiterAnnotation,
+.whitespace-pre {
+	color: var(--light-primary);
+}
+
+/** line **/
+.tree-node--children {
+	border-color: var(--fade-second) !important;
+}
+.node-card-item:before {
+	background-color: var(--light-primary);
+}
+
+/** reference **/
+.rem-reference {
+	color: var(--second);
+}
+.body--show-ui .show-ui-hover\:bg-blue-5:hover {
+    background-color: var(--fade-second);
+}
+
+/** setting **/
+.css-fLTnVi {
+	color: inherit;
+}
+.css-ejcBQ {
+	color: var(--second);
+}
+.settings-page__sidebar__link {
+	color: var(--primary);
+}
+.settings-page .text-primary {
+	color: var(--second);
+}
+.settings-page .h-4,
+.settings-page .pt-8 > * {
+	color: var(--primary) !important;
+}
+.settings-page .text-primary .h-4 {
+	color: var(--second) !important;
+}
